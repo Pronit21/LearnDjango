@@ -1,11 +1,13 @@
 {% extends "layout.html" %}
 
 {% block title %}
-  Home Page
+  Chai Detail Page
 {% endblock %}
 
 {% block content %}
-  <h1>Chai Aur Code | Chai Page</h1>
+  <h1>Chai Detail Page</h1>
+  <h3>{{ chai.name }}</h3>
+  <p>{{ chai.description }}</p>
   <div class="grid grid-cols-3 gap-4 m-4">
     {% for chai in chais %}
       <div class="bg-blue-800 p-5 rounded-xl">
@@ -39,5 +41,6 @@
       </div>
     {% endfor %}
   </div>
+  
 {% endblock %}
 
